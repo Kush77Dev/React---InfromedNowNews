@@ -1,0 +1,44 @@
+/* CardWrapper styles */
+.card-wrapper {
+  transition: transform 0.3s ease;
+  height: auto;
+  width: auto;
+}
+
+.card-wrapper:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-wrapper:hover .card-image {
+  filter: brightness(50%);
+}
+
+/* ImageWrapper styles */
+.image-wrapper {
+  position: relative;
+}
+
+/* CardImage styles */
+.card-image {
+  width: 100%;
+  height: 100%;
+  transition: filter 0.3s ease;
+}
+
+/* OverlayContent styles */
+.overlay-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-wrapper:hover .overlay-content {
+  opacity: 1;
+}
